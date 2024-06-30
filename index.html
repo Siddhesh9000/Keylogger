@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keylogger</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .log-state-container {
+            display: flex;
+            justify-content: space-between;
+            width: 500px;
+            margin-top: 20px;
+        }
+
+        #log, #state {
+            flex: 1;
+            height: 50px;
+            border: 1px solid black;
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+            background-color: #f0a22f;
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+
+        #state {
+            margin-right: 0;
+        }
+
+        .btn-container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 10px;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+
+        .stats {
+            width: 500px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="border: 2px solid black; padding: 2px; border-radius: 10px;">Keylogger</h1>
+        <div class="btn-container">
+            <button id="start-btn">Start Logging Keypresses</button>
+            <button id="stop-btn">Stop Logging Keypresses</button>
+            <button id="export-btn">Export Logs</button>
+            <button id="clear-btn">Clear Logs</button>
+        </div>
+        <div class="log-state-container">
+            <div id="log"></div>
+            <div id="state"></div>
+        </div>
+        <div class="stats">
+            <p>Key Press Frequency:</p>
+            <div id="key-frequency"></div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

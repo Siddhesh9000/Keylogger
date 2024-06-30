@@ -2,6 +2,9 @@
 
 A simple web-based keylogger that tracks and logs key presses, displaying their frequencies, with options to export the logs and clear the data.
 
+![image](https://github.com/Siddhesh9000/Keylogger/assets/98513953/3981866e-fd58-4936-a650-9e2707ee1729)
+
+
 ## ✨ Features
 - **Start/Stop Logging**: Start and stop the key logging functionality.
 - **Real-Time Display**: Shows key press and release events in real-time.
